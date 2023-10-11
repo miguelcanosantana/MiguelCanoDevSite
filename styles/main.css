@@ -1,0 +1,28 @@
+:root {
+    --c-main: #1f7653;
+    --c-background: #a13e3e;
+    --c-clickable-icon-background: #1b0707;
+}
+
+
+body {
+    color: aliceblue;
+    background-color: var(--c-background);
+}
+
+
+.profile-photo {
+    border-radius: 100%;
+}
+
+
+.clickable-icon {
+    border-radius: 100%;
+    padding: 10px;
+    background-color: var(--c-clickable-icon-background);
+}
+
+.clickable-icon > i {
+
+    color: aliceblue;
+}
