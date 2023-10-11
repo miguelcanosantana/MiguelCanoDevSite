@@ -1,13 +1,37 @@
+@font-face {
+    font-family: "Astloch Regular";
+    src: url('/fonts/Astloch-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Astloch Bold";
+    src: url('/fonts/Astloch-Bold.ttf');
+}
+
+@font-face {
+    font-family: "DoGothic16";
+    src: url('/fonts/DotGothic16-Regular.ttf');
+}
+
+
 :root {
-    --c-main: #1f7653;
-    --c-background: #a13e3e;
+    --c-main: #8e0000;
+    --c-secondary: #63cc8f;
+    --c-background: #000000;
     --c-clickable-icon-background: #1b0707;
 }
 
 
 body {
-    color: aliceblue;
+    color: var(--c-secondary);
     background-color: var(--c-background);
+    font-family: "DoGothic16", Helvetica, sans-serif;
+}
+
+
+#hero-title {
+    color: var(--c-main);
+    font-family: "Astloch Regular", Helvetica, sans-serif;
 }
 
 
@@ -16,13 +40,6 @@ body {
 }
 
 
-.clickable-icon {
-    border-radius: 100%;
-    padding: 10px;
-    background-color: var(--c-clickable-icon-background);
-}
-
-.clickable-icon > i {
-
-    color: aliceblue;
+.icon-link{
+    color: var(--c-secondary);
 }
