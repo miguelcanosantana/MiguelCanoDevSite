@@ -17,12 +17,18 @@
 :root {
     --c-main: #52c080;
     --c-main-background: rgba(82, 192, 128, 0.075);
-    --c-background: #050211;
+    --c-background: #0b0522;
 }
 
 
 body {
     background-color: var(--c-background);
+
+    background: radial-gradient(at bottom right, #c2b8be 0, #c2b8be 25px, rgba(194,184,190,0.2) 25px, rgba(194,184,190,0.2) 50px, rgba(194,184,190,0.75) 50px, rgba(194,184,190,0.75) 75px, rgba(194,184,190,0.25) 75px, rgba(194,184,190,0.25) 100px, rgba(194,184,190,0.3) 100px, rgba(194,184,190,0.3) 125px, rgba(194,184,190,0.75) 125px, rgba(194,184,190,0.75) 150px, rgba(194,184,190,0.2) 150px, rgba(194,184,190,0.2) 175px, transparent 175px, transparent 200px), radial-gradient(at top left, transparent 0, transparent 25px, rgba(194,184,190,0.2) 25px, rgba(194,184,190,0.2) 50px, rgba(194,184,190,0.75) 50px, rgba(194,184,190,0.75) 75px, rgba(194,184,190,0.3) 75px, rgba(194,184,190,0.3) 100px, rgba(194,184,190,0.25) 100px, rgba(194,184,190,0.25) 125px, rgba(194,184,190,0.75) 125px, rgba(194,184,190,0.75) 150px, rgba(194,184,190,0.2) 150px, rgba(194,184,190,0.2) 175px, #c2b8be 175px, #c2b8be 200px, transparent 200px, transparent 500px);
+    background-blend-mode: multiply;
+    background-size: 200px 200px, 200px 200px;
+    background-color: var(--c-background);
+
 }
 
 
@@ -33,23 +39,39 @@ body {
 #hero-title {
     font-size: 65px;
     font-family: "Astloch Regular", Helvetica, sans-serif;
-    background: #8E0000;
-    background: -webkit-linear-gradient(to bottom, #8E0000 24%, #000000 100%);
-    background: -moz-linear-gradient(to bottom, #8E0000 24%, #000000 100%);
-    background: linear-gradient(to bottom, #8E0000 24%, #000000 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-shadow: 0 -1px 0 #e4d2e9, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px
+}
+
+
+#profile-card {
+    width: 225px;
+    height: 275px;
+    background-color: #b19e7b;
+    padding: 10px;
+    box-shadow: 0px 0px 40px -9px rgb(0, 0, 0);
+
+    transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(8deg) rotateY(-15deg) rotateZ(-11deg) perspective(1000px);
+    transition: transform 1s ease-out 50ms;
+}
+
+
+#profile-card:hover {
+    transform: scaleX(1.05) scaleY(1.05) scaleZ(1.05) rotateX(2deg) rotateY(0deg) rotateZ(-4deg) perspective(1000px);
+    transition: transform 0.5s ease-out 50ms;
 }
 
 
 #profile-photo {
-    border-radius: 100%;
     filter: grayscale(100%) sepia(44%) saturate(318%) contrast(116%);
-    -webkit-filter: grayscale(100%) sepia(44%) saturate(318%) contrast(116%);
-    -moz-filter: grayscale(100%) sepia(44%) saturate(318%) contrast(116%);
 }
 
+
+.spacer-small {
+    height: 20px;
+}
 
 .spacer-mid {
     height: 100px;
