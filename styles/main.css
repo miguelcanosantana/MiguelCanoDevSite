@@ -16,6 +16,7 @@
 
 :root {
     --c-main: #52c080;
+    --c-main-background: rgba(82, 192, 128, 0.075);
     --c-background: #050211;
 }
 
@@ -24,6 +25,10 @@ body {
     background-color: var(--c-background);
 }
 
+
+#hero-section {
+    height: 100vh;
+}
 
 #hero-title {
     font-size: 65px;
@@ -38,6 +43,19 @@ body {
 }
 
 
+#profile-photo {
+    border-radius: 100%;
+    filter: grayscale(100%) sepia(44%) saturate(318%) contrast(116%);
+    -webkit-filter: grayscale(100%) sepia(44%) saturate(318%) contrast(116%);
+    -moz-filter: grayscale(100%) sepia(44%) saturate(318%) contrast(116%);
+}
+
+
+.spacer-mid {
+    height: 100px;
+}
+
+
 .terminal-text {
     font-family: "DoGothic16", Helvetica, sans-serif;
     color: var(--c-main);
@@ -46,28 +64,19 @@ body {
 
 .terminal-button {
     padding: 8px;
-    transition: padding 0.1s ease-in 0ms;
     font-size: 18px;
-    transition: font-size 0.1s ease-in 0ms;
-    border: 1px dashed var(--c-main);
+    transition: font-size 0.05s ease-in 50ms;
+    border: 1px solid var(--c-main);
+    border-radius: 10px;
     text-decoration: none;
+    background-color: var(--c-main-background);
 }
 
 .terminal-button:hover {
-    
-    padding: 10px;
-    transition: padding 0.1s ease-in 0ms;
     font-size: 19px;
     transition: font-size 0.1s ease-in 0ms;
-    border: 1px dashed var(--c-main);
     text-decoration: none;
 }
-
-
-.profile-photo {
-    border-radius: 100%;
-}
-
 
 .icon-link{
     color: var(--c-main);
