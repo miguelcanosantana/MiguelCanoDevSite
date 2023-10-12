@@ -15,23 +15,52 @@
 
 
 :root {
-    --c-main: #8e0000;
-    --c-secondary: #63cc8f;
-    --c-background: #000000;
-    --c-clickable-icon-background: #1b0707;
+    --c-main: #52c080;
+    --c-background: #050211;
 }
 
 
 body {
-    color: var(--c-secondary);
     background-color: var(--c-background);
-    font-family: "DoGothic16", Helvetica, sans-serif;
 }
 
 
 #hero-title {
-    color: var(--c-main);
+    font-size: 65px;
     font-family: "Astloch Regular", Helvetica, sans-serif;
+    background: #8E0000;
+    background: -webkit-linear-gradient(to bottom, #8E0000 24%, #000000 100%);
+    background: -moz-linear-gradient(to bottom, #8E0000 24%, #000000 100%);
+    background: linear-gradient(to bottom, #8E0000 24%, #000000 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.terminal-text {
+    font-family: "DoGothic16", Helvetica, sans-serif;
+    color: var(--c-main);
+}
+
+
+.terminal-button {
+    padding: 8px;
+    transition: padding 0.1s ease-in 0ms;
+    font-size: 18px;
+    transition: font-size 0.1s ease-in 0ms;
+    border: 1px dashed var(--c-main);
+    text-decoration: none;
+}
+
+.terminal-button:hover {
+    
+    padding: 10px;
+    transition: padding 0.1s ease-in 0ms;
+    font-size: 19px;
+    transition: font-size 0.1s ease-in 0ms;
+    border: 1px dashed var(--c-main);
+    text-decoration: none;
 }
 
 
@@ -41,5 +70,5 @@ body {
 
 
 .icon-link{
-    color: var(--c-secondary);
+    color: var(--c-main);
 }
