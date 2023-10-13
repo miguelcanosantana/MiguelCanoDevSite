@@ -65,8 +65,17 @@ body {
     height: 20px;
 }
 
+.spacer-semi-mid {
+    height: 50px;
+}
+
 .spacer-mid {
     height: 100px;
+}
+
+
+.spacer-big {
+    height: 200px;
 }
 
 
