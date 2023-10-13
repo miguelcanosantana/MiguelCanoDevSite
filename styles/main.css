@@ -92,6 +92,7 @@ body {
     border-radius: 10px;
     text-decoration: none;
     background-color: var(--c-main-background);
+    backdrop-filter: blur(15px)
 }
 
 .terminal-button:hover {
